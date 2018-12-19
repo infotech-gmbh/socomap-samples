@@ -31,11 +31,11 @@ This repository contains some usage examples of the [socomap](https://github.com
 
 # Sender Example
 
-The [sender](https://github.com/infotech-gmbh/socomap-samples/blob/master/samples/socomap_sender.py) is able to send an UTF-8 String or a binary file to an inbox.
+The [sender](samples/sender/socomap_sender.py) is able to send an UTF-8 String or a binary file to an inbox.
 
 # Receiver Example
 
-The [receiver](https://github.com/infotech-gmbh/socomap-samples/blob/master/samples/socomap_receiver.py) is able to register a new inbox and can pull the next incoming transmission out of the server.
+The [receiver](samples/receiver/socomap_receiver.py) is able to register a new inbox and can pull the next incoming transmission out of the server.
 
 # WSR EDI Context
 
