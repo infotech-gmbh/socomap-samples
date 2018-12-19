@@ -6,20 +6,20 @@ If you just want to run the samples you need an installed [Docker](https://www.d
 Register a new inbox:
 
 ```sh
-docker run infotechgmbh/socomap_receiver --insecure register <party>
+docker run infotechgmbh/socomap_receiver register <party>
 ```
 returns the api key to access the inbox.
 
 Send a message to the inbox:
 
 ```sh
-docker run infotechgmbh/socomap_sender --data "some data to transfer" --insecure <party>
+docker run infotechgmbh/socomap_sender --data "some data to transfer" <party>
 ```
 
 Receive the message on the inbox:
 
 ```sh
-docker run infotechgmbh/socomap_receiver --insecure get <party> --api_key <api_key>
+docker run infotechgmbh/socomap_receiver get <party> --api_key <api_key>
 ```
 
 https://socomap.infotech.de is uses as default server.
@@ -69,13 +69,13 @@ python socomap_receiver.py -h
 Register a new inbox:
 
 ```sh
-python socomap_receiver.py --insecure --host https://socomap.infotech.de register --email <email> <party>
+python socomap_receiver.py --host https://socomap.infotech.de register --email <email> <party>
 ```
 
 Get next transmission:
 
 ```sh
-python socomap_receiver.py --insecure --host https://socomap.infotech.de --insecure get <party> --api_key <api_key>
+python socomap_receiver.py --host https://socomap.infotech.de get <party> --api_key <api_key>
 ```
 
 ## Run the sender
@@ -89,5 +89,5 @@ python socomap_sender.py -h
 Send some string data:
 
 ```sh
-python socomap_sender.py --insecure --host https://socomap.infotech.de --data "some test data" <party>
+python socomap_sender.py --host https://socomap.infotech.de --data "some test data" <party>
 ```
