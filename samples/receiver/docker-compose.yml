@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  receiver:
+    image: infotechgmbh/socomap_receiver
+    build: .
+    volumes:
+      - ./socomap_receiver.py:/app/socomap_receiver.py

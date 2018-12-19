@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  sender:
+    image: infotechgmbh/socomap_sender
+    build: .
+    volumes:
+      - ./socomap_sender.py:/app/socomap_sender.py
